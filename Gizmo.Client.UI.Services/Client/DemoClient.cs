@@ -1752,6 +1752,11 @@ namespace Gizmo.Client
             return Task.FromResult(Enumerable.Empty<PopularExecutableModel>());
         }
 
+        public Task<PagedListClassic<ApplicationExecutableAgeRatingModel>> AgeRatingGetAsync(ApplicationExecutableAgeRatingFilter filter, CancellationToken cToken = default)
+        {
+            return Task.FromResult(PagedListClassic<ApplicationExecutableAgeRatingModel>.Create(Enumerable.Empty<ApplicationExecutableAgeRatingModel>(),0,10));
+        }
+
         public Task<IEnumerable<PopularProductModel>> UserPopularProductsGetAsync(UserPopularProductsFilter filters, CancellationToken cancellationToken = default)
         {
             Random random = new Random();
