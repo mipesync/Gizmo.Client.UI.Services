@@ -1752,7 +1752,7 @@ namespace Gizmo.Client
             return Task.FromResult(Enumerable.Empty<PopularExecutableModel>());
         }
 
-        public Task<PagedListClassic<ApplicationExecutableAgeRatingModel>> AgeRatingGetAsync(ApplicationExecutableAgeRatingFilter filter, CancellationToken cToken = default)
+        public Task<PagedListClassic<ApplicationExecutableAgeRatingModel>> ExecutablesAgeRatingGetAsync(ApplicationExecutableAgeRatingFilter filter, CancellationToken cToken = default)
         {
             return Task.FromResult(PagedListClassic<ApplicationExecutableAgeRatingModel>.Create(Enumerable.Empty<ApplicationExecutableAgeRatingModel>(),0,10));
         }
